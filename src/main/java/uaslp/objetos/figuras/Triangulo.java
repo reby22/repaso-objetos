@@ -1,8 +1,8 @@
 package uaslp.objetos.figuras;
 public class Triangulo extends Figura
 {
-    double base;
-    double altura;
+    Double base;
+    Double altura;
     String description;
 
     public  Triangulo(double base, double altura)
@@ -34,6 +34,10 @@ public class Triangulo extends Figura
     public double getArea()
     {
         double area;
+        if(base == null)
+            throw new BaseNoProvistaException();
+        if(altura == null)
+            throw new AlturaNoProvistaException();
         area = (base * altura) / 2;
         return area;
     }
