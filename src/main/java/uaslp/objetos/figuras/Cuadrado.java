@@ -1,12 +1,12 @@
 package uaslp.objetos.figuras;
 
-public class Cuadrado
+public class Cuadrado extends Figura
 {
     double lado;
 
     public Cuadrado ()
     {
-
+        name="Cuadrado";
     }
     public Cuadrado(double lado)
     {

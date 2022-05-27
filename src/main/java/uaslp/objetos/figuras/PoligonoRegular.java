@@ -1,29 +1,29 @@
 package uaslp.objetos.figuras;
 import  java.lang.Math;
-public class PoligonoRegular
+public class PoligonoRegular extends Figura
 {
     int numeroDeLados;
     double lado;
     public PoligonoRegular(int numeroDeLados)
     {
         this.numeroDeLados = numeroDeLados;
+        name = "Poligono Regular";
     }
     public PoligonoRegular(int numeroDeLados, double lado)
     {
         this.numeroDeLados = numeroDeLados;
         this.lado = lado;
+        name = "Poligono Regular";
     }
 
     public void setLado(double lado)
     {
         this.lado = lado;
     }
-
     public double getLado()
     {
         return lado;
     }
-
     public double getArea()
     {
         double area;
